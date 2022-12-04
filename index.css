@@ -1,0 +1,185 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,700);
+/* @import url('reset.css'); */
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: url('https://images.unsplash.com/photo-1507967669805-c23336beea5b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+  .head {
+   
+
+    height: 100vh;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    padding: 0rem 10%;
+    justify-content: left;
+}
+.head::after {
+    content: '';
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(255, 255, 255, 0.062));
+    height: 200vh;
+    width: 100%;
+    position: absolute;
+    display: block;
+    z-index: 2;
+    left: 0;
+}
+
+  .content{
+    z-index: 99 !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-48%, -60%);
+    text-align: center;
+  }
+
+    .content img{
+        width: 50%;
+        position: relative;
+    }
+
+    .content button{
+        background: linear-gradient(to right,#eea467 ,#F25F5C);
+        color: #fff;
+        font-family: 'Poppins';
+        font-size: 18px;
+        font-weight: 800;
+        font-style: normal;
+        letter-spacing: 5px;
+        text-decoration: none;
+        padding: 12px 18px;
+        border: 0px solid #000;
+        border-radius: 7px;
+        display: inline-block;
+        transition: 0.3s all;
+        
+    }
+
+    .content button:hover{
+        padding: 12px 30px !important;
+    }
+
+    .mar{
+        margin: 30px;
+    }
+
+.mar2{
+    margin: 290px;
+}
+
+
+
+
+
+    
+    .loader {
+        position: relative;
+        z-index: 99999;
+        text-align: center;
+        background-color: transparent;
+        background: transparent;
+    }
+    .loader span {
+        display: inline-block;
+        /* width: 80px;
+        height: 80px; */
+          margin: -290px 20px 54px  -194px;
+             background:url("http://premiumcoding.com/CSSTricks/fallingLeaves/leaf.png");
+        
+        -webkit-animation: loader 10s infinite  linear;
+        -moz-animation: loader 10s infinite  linear;
+    }
+    .loader span:nth-child(5n+5) {
+    
+        -webkit-animation-delay: 1.3s;
+        -moz-animation-delay: 1.3s;
+    }
+    .loader span:nth-child(3n+2) {
+    
+        -webkit-animation-delay: 1.5s;
+        -moz-animation-delay: 1.5s;
+    }
+    .loader span:nth-child(2n+5) {
+    
+        -webkit-animation-delay: 1.7s;
+        -moz-animation-delay: 1.7s;
+    }
+    
+    .loader span:nth-child(3n+10) {
+    
+        -webkit-animation-delay: 2.7s;
+        -moz-animation-delay: 2.7s;
+    }
+    .loader span:nth-child(7n+2) {
+    
+        -webkit-animation-delay: 3.5s;
+        -moz-animation-delay: 3.5s;
+    }
+    .loader span:nth-child(4n+5) {
+    
+        -webkit-animation-delay: 5.5s;
+        -moz-animation-delay: 5.5s;
+    }
+    .loader span:nth-child(3n+7) {
+    
+        -webkit-animation-delay: 8s;
+        -moz-animation-delay: 8s;
+    }
+    @-webkit-keyframes loader {
+      0% {
+        width: 80px;
+        height: 80px;
+        opacity: 1;
+    
+        -webkit-transform: translate(0, 0px) rotateZ(0deg);
+      }
+      75% {
+        width: 80px;
+        height: 80px;
+        opacity: 1;
+    
+        -webkit-transform: translate(100px, 600px) rotateZ(270deg); 
+      }
+      100% {
+        width: 80px;
+        height: 80px;
+        opacity: 0;
+    
+        -webkit-transform: translate(150px, 800px) rotateZ(360deg);
+      }
+    }
+    @-moz-keyframes loader {
+      0% {
+        width: 80px;
+        height: 80px;
+        opacity: 1;
+        
+        -webkit-transform: translate(0, 0px) rotateZ(0deg);
+      }
+      75% {
+        width: 80px;
+        height: 80px;
+        opacity: 1;
+       
+        -webkit-transform: translate(100px, 600px) rotateZ(270deg); 
+      }
+      100% {
+        width: 80px;
+        height: 80px;
+        opacity: 0;
+        
+        -webkit-transform: translate(150px, 800px) rotateZ(360deg);
+      }
+    }
